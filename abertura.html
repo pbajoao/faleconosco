@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<title>Fale com a Vanzolini</title>
+		<script src="ckeditor/ckeditor.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			.cke_textarea_inline{
+			    width: 100%;
+			    padding-left: 60px;
+			    padding-top: 10px;
+			    background-image: url(img/edit.png);
+			    background-size: 30px 30px;
+			    background-position: 15px 12px;
+			    background-repeat: no-repeat;
+				height: 247px;
+				border: 1px solid #ddd;
+				-webkit-appearance: textfield;
+			}
+		</style>
+	</head>
+	<body class="color-principal-fundo">
+
+		<div class="menu">
+		    <div class="container">
+		        <div class="left" style="margin-right: 15px;">
+		            <h2 class="cabecalho-text"> Fale com a <span class="nao-desktop">Vanzolini GTE</span></h2>
+		        </div>
+		        <div class="naomob-linh left">
+		            <a href="#">
+						<img src="img/logo.png" alt="FCAV-GTE | Univesp" title="FCAV-GTE | Univesp" class="img-responsive">
+		            </a> 
+		        </div>
+		        <div class="right">&nbsp;</div>
+		    </div>
+		</div>
+		<div class="fundo-base"></div>
+
+		<div class="container">
+			<div class="div-forma">
+				<div class="row">
+					<h1 class="title-effect t2">Novo chamado</h1>
+					<div class="col-xs-12 col-sm-6">
+						<div class="margin-1">
+							<input type="text" class="camp-pesq" placeholder="Nome..." required>
+						</div>
+						<div class="margin-1">
+							<input type="text" class="camp-pesq" placeholder="CPF..." required>
+						</div>
+						<div class="margin-1">
+							<input type="email" class="camp-pesq" placeholder="E-mail..." required>
+						</div>
+						<div class="margin-1">
+							<input type="text" class="camp-pesq" placeholder="Assunto..." required>
+						</div>
+						<div class="margin-1">
+							<select class="camp-pesq" required>
+								<option>Tipo do chamado...</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="margin-1">
+							<textarea name="article-body" class="camp-pesq text-abertura" placeholder="Mensagem..."></textarea>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12">
+						<div class="margin-1">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6">
+											<span class="naomob-linh"> Se desejar enriquecer os dados, anexe arquivos nessa seção.</span> 
+										</div>
+										<div class="col-xs-12 col-sm-6 text-right">
+											<button class="btn btn-info color-principal">Adicionar Arquivo</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel-body">
+									...
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12">
+						<div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 margin-1 text-right">
+									<button class="btn btn-default">Limpar</button>
+								</div>
+								<div class="col-xs-12 col-sm-6 margin-1">
+									<button class="btn btn-info color-principal">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			CKEDITOR.inline( 'article-body' );
+		</script>
+	</body>
+</html>
